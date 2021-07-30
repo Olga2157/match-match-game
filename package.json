@@ -1,0 +1,36 @@
+{
+  "name": "match-match-game",
+  "version": "0.0.1",
+  "description": "Cards Game",
+  "scripts": {
+    "start": "webpack serve --config ./webpack.config.js",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix",
+    "build": "webpack",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
+  },
+  "author": "Olga2157",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-plugin-import": "^2.23.3",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.2",
+    "ts-loader": "9.2.2",
+    "tslint": "^5.20.1",
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "4.2.4",
+    "webpack": "5.37.1",
+    "webpack-cli": "4.7.0",
+    "webpack-dev-server": "3.11.2",
+    "webpack-livereload-plugin": "^3.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.1",
+    "eslint": "^7.27.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
+    "prettier": "^2.3.0"
+  }
+}

@@ -1,0 +1,567 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* header */
+
+.header-container {
+  margin: 0 auto;
+  width: 1200px;
+  height: 64px;
+  top: 0px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #2196f3;
+}
+
+.header-logo {
+  position: relative;
+  width: 100px;
+  height: 42px;
+  margin-left: 20px;
+  background-image: url(img/logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.navigation-buttons {
+  width: 430px;
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav button {
+  background-color: #2196f3;
+  border: #1e88e5;
+  color: white;
+  height: 64px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.active-route {
+  background-color: #1e88e5;
+}
+
+/* todo design for active button - border:none  */
+
+.user-area {
+  margin-left: 320px;
+  display: flex;
+  align-items: center;
+}
+
+.register-button, .start-button, .stop-button {
+  background-color: white;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  color: #1e88e5;
+  height: 42px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  position: relative;
+}
+
+.register-button {
+  width: 200px;
+}
+
+.start-button, .stop-button {
+  width: 130px;
+  margin-left: 10px;
+}
+
+.avatar {
+  margin-left: 20px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.avatar img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.game img, .game-hard img {
+  height: 100%;
+}
+
+/* main */
+
+main {
+  margin: 0 auto;
+  width: 1200px;
+  height: 640px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #e8eff5;
+}
+
+#wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 960px;
+  height: 600px;
+  background-color: white;
+  overflow: hidden;
+}
+
+/* About Game page + Best Score page + Settings page */
+
+main h2 {
+  text-align: center;
+  top: 20px;
+}
+
+/* About Game page  */
+
+.game-steps {
+  position: relative;
+  left: 80px;
+  bottom: 20px;
+  width: 800px;
+  height: 500px;
+  background-color: white;
+}
+
+.game-step {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.game-step h3 {
+  margin-left: 40px;
+  background-color: #2196f3;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.game-step p {
+  margin-left: 20px;
+  width: 250px;
+}
+
+.registration-screen {
+  margin-left: 210px;
+  width: 168px;
+  height: 168px;
+}
+
+.settings-screen {
+  margin-left: 280px;
+  width: 100px;
+  height: 48px;
+}
+
+.game-screen {
+  margin-left: 80px;
+  width: 300px;
+  height: 225px;
+}
+
+/* Registration popup */
+
+:root {
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+}
+
+.popup-container {
+  position: absolute;
+  top: 80px;
+  left: 250px;
+  width: 400px;
+  height: 460px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup-container h2 {
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.form {
+  padding: 30px 40px;
+  position: relative;
+}
+
+.form-control {
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.form label {
+  color: #777;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.form input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control small {
+  font-size: 12px;
+  background: #fff;
+  color: var(--error-color);
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+  visibility: hidden;
+}
+
+/* buttons in registration popup */
+
+.popup-container button {
+  cursor: pointer;
+  background: #3498db;
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.form:before, .form:after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  position: absolute;
+  background: #3498db;
+  height: 100%;
+  z-index: -1;
+  transform: skew(10deg, 10deg);
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+.form:after {
+  transform: skew(-10deg, -10deg);
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+.form-control.success input {
+  border-color: var(--success-color);
+}
+
+.two-parts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Game settings page */
+
+.settings-div {
+  margin: 100px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+select {
+  background: #3498db;
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  height: 50px;
+}
+
+/* Game page  */
+
+.timer {
+  position: relative;
+  margin: 0 auto;
+  width: 200px;
+  height: 55px;
+  font-size: 48px;
+  line-height: 55px;
+}
+
+.timer:nth-child(1) {
+  left: 40px;
+}
+
+/* Game */
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-content: center;
+}
+
+.game-hard {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-content: center;
+}
+
+.cards-easy {
+  width: 168px;
+  height: 168px;
+  justify-self: center;
+  background-color: white;
+}
+
+.cards-medium {
+  width: 120px;
+  height: 120px;
+  justify-self: center;
+}
+
+.cards-hard {
+  width: 110px;
+  height: 110px;
+  justify-self: center;
+}
+
+.card-open-incorrectly {
+  filter: sepia() hue-rotate(291deg);
+  background-color: #f79a9a;
+}
+
+.card-open-correctly {
+  filter: sepia() hue-rotate(95deg);
+  background-color: lightgreen;
+}
+
+.animation {
+  animation-name: rotation;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Congratulation Popup */
+
+.congratulation-popup-container {
+  position: absolute;
+  top: 80px;
+  left: 250px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.congratulation-popup-container button {
+  cursor: pointer;
+  background: #3498db;
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  width: 30%;
+  font-size: 16px;
+}
+
+.congratulation-popup-container button {
+  cursor: pointer;
+  background: #3498db;
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  width: 30%;
+  font-size: 16px;
+}
+
+.congratulation-popup-container:before, .congratulation-popup-container:after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 30%;
+  position: absolute;
+  background: #3498db;
+  z-index: -1;
+  transform: skew(10deg, 10deg);
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+.congratulation-popup-container:after {
+  transform: skew(-10deg, -10deg);
+}
+
+/* Best score page */
+
+.best-score-div {
+  margin: 0 40px;
+}
+
+.user-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 0 20px 0 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.score-name {
+  margin: 0;
+  font-size: 20px;
+  width: 40%;
+}
+
+.user-email {
+  margin: 0;
+  font-size: 20px;
+  width: 30%;
+}
+
+.user-score {
+  margin: 0;
+  font-size: 20px;
+}
+
+.invisible {
+  display: none;
+}
+
+/* footer */
+
+footer {
+  border-top: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #38495a, #a2abb3, #38495a);
+  background-color: #313940;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-container {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.github {
+  display: block;
+  width: 120px;
+  height: 45px;
+  padding-left: 45px;
+  background-image: url('img/svg/github.svg');
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  line-height: 45px;
+  color: #cbd5de;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  transition: 0.3s;
+}
+
+.github:hover {
+  color: #fff;
+}
+
+.rss {
+  display: block;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  width: 86px;
+  height: 32px;
+  background-image: url('img/svg/rss.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-right: 70px;
+}
+
+.rss-year {
+  position: absolute;
+  bottom: 0;
+  margin-left: 90px;
+  font-size: 21px;
+  letter-spacing: -2px;
+  color: #cbd5de;
+  line-height: 0.9;
+  font-weight: bold;
+  transition: 0.3s;
+}
